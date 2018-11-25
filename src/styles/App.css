@@ -18,6 +18,13 @@
   color: white;
 }
 
+.title{
+  font-size: 20px;
+}
+.whiteFont{
+  color: green;
+}
+
 .AppLink {
   color: #61dafb;
 }

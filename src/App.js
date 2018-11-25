@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import cs from 'classnames'
 import logo from './logo.svg';
 import appCss from './styles/App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className={appCss.App}>
+      <div className={cs(appCss.App)}>
         <header className={appCss.AppHeader}>
           <img src={logo} className={appCss.AppLogo} alt="logo" />
-          <p>
+          <p className={cs(appCss.title, appCss.whiteFont)}>
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a
