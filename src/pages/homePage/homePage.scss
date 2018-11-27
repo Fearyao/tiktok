@@ -1,0 +1,13 @@
+.homePage{
+    height: 100vh;
+    .top{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .bottom{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import MultSearch from '../../components/multSearch/multSearch'
 import NavBar from '../../components/navBar/navBar'
-// import cs from 'classnames'
-// import styles from './homePage.scss'
+import cs from 'classnames'
+import style from './homePage.scss'
 
 class HomePage extends Component {
     constructor(props) {
@@ -11,10 +11,14 @@ class HomePage extends Component {
     }
     render() {
         return (
-            <div className="homePage">
-                <MultSearch></MultSearch>
-                homePage
-                <NavBar></NavBar>
+            <div className={cs(style.homePage)}>
+                <div className={cs(style.top)}>
+                    <MultSearch></MultSearch>
+                </div>
+
+                <div className={cs(style.bottom)}>
+                    <NavBar></NavBar>
+                </div>
             </div>
         )
     }
