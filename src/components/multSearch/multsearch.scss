@@ -1,3 +1,23 @@
 .multsearch{
-    
+    background: rgba(0,0,0,0.1);
+    color: white;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    .item{
+        &:nth-child(2){
+            span{
+                font-size: 0.48rem;
+                padding: 0 0.2rem;
+                color: #ccc;
+                &.active{
+                    color: white
+                }
+            }
+        }
+    }
 }
